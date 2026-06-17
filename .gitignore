@@ -1,0 +1,58 @@
+# ====================================================================
+# UTN - TFI_PROG3 - GLOBAL MONOREPO GITIGNORE
+# ====================================================================
+
+# Archivos del Sistema Operativo y Editores
+# --------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.local
+*.env
+*.env.local
+
+# IntelliJ IDEA (Configuraciones locales de la raíz)
+# --------------------------------------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.modules/
+
+# VS Code
+# --------------------------------------------------------------------
+.vscode/
+*.code-workspace
+
+
+# ====================================================================
+# BACKEND - CONFIGURACIÓN DE SPRING BOOT (Nombre exacto de tu carpeta)
+# ====================================================================
+TFI_Prog3_Back/.gradle/
+TFI_Prog3_Back/build/
+TFI_Prog3_Back/out/
+
+# Archivos locales de configuración de IntelliJ dentro del módulo
+TFI_Prog3_Back/*.iml
+
+# Ignorar archivos temporales de log y bases de datos locales
+TFI_Prog3_Back/*.log
+TFI_Prog3_Back/*.db
+TFI_Prog3_Back/db/
+
+# Compilados de Java nativos
+TFI_Prog3_Back/*.class
+TFI_Prog3_Back/*.jar
+TFI_Prog3_Back/*.war
+
+
+# ====================================================================
+# FRONTEND - CONFIGURACIÓN DE VITE + REACT + TS (pnpm)
+# ====================================================================
+front/node_modules/
+front/.pnpm-debug.log*
+front/dist/
+front/build/
+front/.cache/
+front/.vite/
+front/*.tsbuildinfo
